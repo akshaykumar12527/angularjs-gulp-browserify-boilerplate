@@ -32,7 +32,16 @@
     "unit": "cross-env NODE_ENV=test ./node_modules/.bin/gulp unit"
   },
   "dependencies": {
-    "cross-env": "^3.1.1"
+    "bootstrap-less": "^3.3.8",
+    "cross-env": "^3.1.1",
+    "gulp-add-less-variables": "^1.0.4",
+    "gulp-banner": "^0.1.3",
+    "gulp-clean-css": "^3.0.4",
+    "gulp-less": "^3.3.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "minimist": "^1.2.0"
   },
   "devDependencies": {
     "angular": "^1.5.0",

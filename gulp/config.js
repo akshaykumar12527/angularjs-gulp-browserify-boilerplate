@@ -8,7 +8,8 @@ export default {
   buildDir: './build/',
 
   styles: {
-    src: 'app/styles/**/*.scss',
+    // src: 'app/styles/**/*.scss',
+    src: './bootstrap-less/bootstrap/index.less',
     dest: 'build/css',
     prodSourcemap: false,
     sassIncludePaths: []
