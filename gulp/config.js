@@ -9,7 +9,7 @@ export default {
 
   styles: {
     // src: 'app/styles/**/*.scss',
-    src: './bootstrap-less/bootstrap/index.less',
+    src: 'app/styles/bootstrap/index.less',
     dest: 'build/css',
     prodSourcemap: false,
     sassIncludePaths: []
@@ -61,6 +61,11 @@ export default {
   browserify: {
     bundleName: 'main.js',
     prodSourcemap: false
+  },
+
+  theme: {
+    src: 'theme/**/*',
+    dest: 'build/'
   },
 
   test: {
