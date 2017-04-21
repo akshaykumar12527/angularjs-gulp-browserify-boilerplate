@@ -2,15 +2,15 @@ angularjs-gulp-browserify-boilerplate
 =====================================
 [![Build Status](https://travis-ci.org/jakemmarsh/angularjs-gulp-browserify-boilerplate.svg)](https://travis-ci.org/jakemmarsh/angularjs-gulp-browserify-boilerplate) [![dependencies Status](https://david-dm.org/jakemmarsh/angularjs-gulp-browserify-boilerplate/status.svg)](https://david-dm.org/jakemmarsh/angularjs-gulp-browserify-boilerplate) [![devDependency Status](https://david-dm.org/jakemmarsh/angularjs-gulp-browserify-boilerplate/dev-status.svg)](https://david-dm.org/jakemmarsh/angularjs-gulp-browserify-boilerplate#info=devDependencies)
 
-A boilerplate using AngularJS, SASS, Gulp, and Browserify that also utilizes [these best AngularJS practices](https://github.com/toddmotto/angularjs-styleguide)  and Gulp best practices from [this resource](https://github.com/greypants/gulp-starter).
+A boilerplate using AngularJS, Less, Gulp, and Browserify that also utilizes [these best AngularJS practices](https://github.com/toddmotto/angularjs-styleguide)  and Gulp best practices from [this resource](https://github.com/greypants/gulp-starter).
 
-[View contributors](https://github.com/jakemmarsh/angularjs-gulp-browserify-boilerplate/graphs/contributors)
+[View contributors](https://github.com/akshaykumar/angularjs-gulp-browserify-boilerplate/graphs/contributors)
 
 ---
 
 ### Getting up and running
 
-1. Clone this repo from `https://github.com/jakemmarsh/angularjs-gulp-browserify-boilerplate.git`
+1. Clone this repo from `https://github.com/akshaykumar12527/angularjs-gulp-browserify-boilerplate.git`
 2. Run `npm install` from the root directory
 3. Run `npm run dev`
 4. Your browser will automatically be opened and directed to the browser-sync proxy address
@@ -28,7 +28,7 @@ Now that `npm run dev` is running, the server is up as well and serving files fr
 This boilerplate uses the latest versions of the following libraries:
 
 - [AngularJS](http://angularjs.org/)
-- [SASS](http://sass-lang.com/)
+- [Less](http://lesscss.org/)
 - [Gulp](http://gulpjs.com/)
 - [Browserify](http://browserify.org/)
 
@@ -91,9 +91,9 @@ needs to be added at the very beginning of any Angular functions/modules. The Gu
 
 ---
 
-### SASS
+### Less
 
-SASS, standing for 'Syntactically Awesome Style Sheets', is a CSS extension language adding things like extending, variables, and mixins to the language. This boilerplate provides a barebones file structure for your styles, with explicit imports into `app/styles/main.scss`. A Gulp task (discussed later) is provided for compilation and minification of the stylesheets based on this file.
+Less is a CSS pre-processor, meaning that it extends the CSS language, adding features that allow variables, mixins, functions and many other techniques that allow you to make CSS that is more maintainable, themeable and extendable.
 
 ---
 
@@ -126,9 +126,9 @@ The resulting file (`main.js`) is placed inside the directory `/build/js/`.
 
 ##### Styles
 
-Just one plugin is necessary for processing our SASS files, and that is `gulp-sass`. This will read the `main.scss` file, processing and importing any dependencies and then minifying the result. This file (`main.css`) is placed inside the directory `/build/css/`.
+Just one plugin is necessary for processing our Less files, and that is `gulp-less`. This will read the `index.less` file from bootstrap-less/bootstrap folder, processing and importing any dependencies and then minifying the result. This file (`app.min.css`) is placed inside the directory `/build/css/`.
 
-- **gulp-autoprefixer:** Gulp is currently configured to run autoprefixer after compiling the scss.  Autoprefixer will use the data based on current browser popularity and property support to apply prefixes for you. Autoprefixer is recommended by Google and used in Twitter, WordPress, Bootstrap and CodePen.
+- **gulp-autoprefixer:** Gulp is currently configured to run autoprefixer after compiling the less.  Autoprefixer will use the data based on current browser popularity and property support to apply prefixes for you. Autoprefixer is recommended by Google and used in Twitter, WordPress, Bootstrap and CodePen.
 
 ##### Images
 
